@@ -12,7 +12,7 @@ TOKEN="$(tr -d ' \t\r\n' < "$TOKEN_FILE")"
 ZIP="$(mktemp -d)/site.zip"
 ( cd "$HERE" && zip -q "$ZIP" index.html artist.html data.js _redirects )
 
-echo "Deploying $(unzip -l "$ZIP" | tail -2 | head -1 | awk '{print $2}') files..."
+echo "Deploying $(unzip -l "$ZIP" | tail -1 | awk "{print \$2}") files..."
 RESP="$(curl -sf --max-time 300 \
   -X POST "https://api.netlify.com/api/v1/sites/$SITE_ID/deploys" \
   -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/zip" \
