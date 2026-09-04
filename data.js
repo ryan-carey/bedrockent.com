@@ -74,26 +74,6 @@ window.BEDROCK = {
       ]
     },
     {
-      name: "Jordan McCullough",
-      slug: "jordan-mccullough",
-      bio: "",
-      links: [
-        { type: "spotify",     url: "https://open.spotify.com/artist/78y8zR1dGL2MIZZewwI8BB", primary: true },
-        { type: "instagram",   url: "https://www.instagram.com/jordanmmusic/", primary: true },
-        { type: "tiktok",      url: "https://www.tiktok.com/@jordanmmusic", primary: true },
-        { type: "website",     url: "https://jordanmcculloughmusic.com/", primary: true },
-        { type: "appleMusic",  url: "https://music.apple.com/us/artist/jordan-mccullough/1790738543" },
-        { type: "youtubeMusic",url: "https://music.youtube.com/channel/UClokbhAA3NHbSt44MDzmhDg" },
-        { type: "youtube",     url: "https://www.youtube.com/@jordanmccullough" },
-        { type: "soundcloud",  url: "https://soundcloud.com/jordan-mccullough-181829955" },
-        { type: "bandsintown", url: "https://www.bandsintown.com/a/15651501-jordan-mccullough" },
-        { type: "laylo",       url: "https://laylo.com/jordanmccullough" },
-        { type: "x",           url: "https://x.com/jordanmmusic" },
-        { type: "facebook",    url: "https://www.facebook.com/JordanMMusic/" },
-        { type: "threads",     url: "https://www.threads.com/@jordanmmusic" }
-      ]
-    },
-    {
       name: "Kyndal",
       slug: "kyndal",
       bio: "",
