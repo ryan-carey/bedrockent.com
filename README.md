@@ -20,18 +20,24 @@ Check it before publishing:
 
 ## Publishing
 
-Netlify project: bedrock-music-links (bedrockent.com).
+    ./deploy.sh
 
-Today this is a MANUAL deploy: app.netlify.com -> bedrock-music-links ->
-Deploys -> drag this folder (or a flat zip of it) onto the drop area. A drop
-replaces every file on the site, so deploy the whole folder, never one file.
+Zips the four site files, posts them to the Netlify site via the API, waits
+for the deploy to go ready, then verifies the live hashes and every slug.
 
-This is the weak point. There is no git remote and no CI, which means the
-source of truth has previously lived nowhere durable — the files in this repo
-were recovered by scraping production. Connecting this repo to a git remote
-and pointing the Netlify project at it would make every future change a
-commit, with history and rollback. See the notes in the session that created
-this repo.
+It reads a Netlify personal access token from `../netlify-token.txt` (one
+line, plain text, gitignored, never in this repo). Override the location with
+`NETLIFY_TOKEN_FILE=/path/to/token`. Revoke the token any time at
+app.netlify.com -> User settings -> Applications.
+
+Netlify project: bedrock-music-links (bedrockent.com). Deploys are direct
+zip uploads -- no build step, no linked repo. A deploy replaces every file
+on the site, so always ship the whole set, never one file.
+
+Note: the Netlify MCP connector's `deploy-site` operation does NOT work from
+a Cowork cloud session -- it has to read the stored OAuth token out to mint a
+proxy URL, which those sessions can't do (`mcp_oauth_token_read_unsupported`),
+and the result is an opaque 403. Use `deploy.sh`.
 
 ## Gotchas
 
