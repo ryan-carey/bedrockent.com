@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Bedrock Music</title>
+<meta name="description" content="Bedrock Music — artist management & development." />
+<meta property="og:type" content="profile" />
+
+<style>
+  /* Artist page — shares the visual language of the home hub. */
+  :root {
+    --bg: #0a0a0a;
+    --bg-card: #141414;
+    --border: #262626;
+    --border-hover: #3a3a3a;
+    --text: #f5f5f5;
+    --text-muted: #888888;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100%;
+  }
+  body {
+    background:
+      radial-gradient(ellipse at top, rgba(255,255,255,0.04) 0%, transparent 50%),
+      var(--bg);
+    background-attachment: fixed;
+  }
+  .container { max-width: 560px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  .back {
+    display: inline-flex; align-items: center; gap: 6px;
+    color: var(--text-muted); text-decoration: none;
+    font-size: 13px; letter-spacing: 0.04em; margin-bottom: 28px;
+    transition: color 0.15s ease;
+  }
+  .back:hover { color: var(--text); }
+  .back svg { width: 15px; height: 15px; }
+
+  header { text-align: center; margin-bottom: 20px; }
+  .artist-name {
+    font-size: 30px; font-weight: 800; letter-spacing: 0.04em;
+    background: linear-gradient(180deg, #ffffff 0%, #b0b0b0 100%);
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .eyebrow {
+    color: var(--text-muted); font-size: 11px; letter-spacing: 0.25em;
+    text-transform: uppercase; margin-bottom: 10px;
+  }
+  .bio {
+    color: #cfcfcf; font-size: 14px; line-height: 1.6;
+    text-align: center; margin: 0 auto 8px; max-width: 460px;
+  }
+  .bio.placeholder { color: #5a5a5a; font-style: italic; }
+
+  .section-label {
+    font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase;
+    color: var(--text-muted); margin: 34px 0 14px; padding-left: 4px;
+  }
+  .links-col { display: flex; flex-direction: column; gap: 10px; }
+
+  .link-btn {
+    display: flex; align-items: center; gap: 14px;
+    padding: 15px 18px; background: var(--bg-card);
+    border: 1px solid var(--border); border-radius: 12px;
+    color: var(--text); text-decoration: none;
+    font-size: 15px; font-weight: 600; letter-spacing: 0.02em;
+    transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  }
+  .link-btn:hover { background: #1c1c1c; border-color: var(--border-hover); }
+  .link-btn:active { transform: scale(0.99); }
+  .link-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+  .link-btn .chev { margin-left: auto; color: var(--text-muted); width: 16px; height: 16px; }
+
+  footer {
+    text-align: center; margin-top: 56px;
+    color: var(--text-muted); font-size: 12px; letter-spacing: 0.08em;
+  }
+  .notfound { text-align: center; padding: 80px 0; color: var(--text-muted); }
+  .notfound a { color: var(--text); }
+
+  @media (max-width: 480px) {
+    .container { padding: 24px 16px 60px; }
+    .artist-name { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <a class="back" href="/">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      <span>Bedrock Music</span>
+    </a>
+    <main id="content"></main>
+    <footer><p>&copy; <span id="year"></span> Bedrock Music</p></footer>
+  </div>
+
+<script src="data.js"></script>
+<script>
+  const ICONS = window.BEDROCK_ICONS, LABELS = window.BEDROCK_LABELS, GROUPS = window.BEDROCK_GROUPS;
+  const CHEV = '<svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>';
+
+  function slugFromLocation() {
+    // Works with clean URLs (/veaux) via Netlify rewrite, and with ?a=veaux fallback.
+    const q = new URLSearchParams(location.search).get("a");
+    if (q) return q;
+    const parts = location.pathname.split("/").filter(Boolean);
+    return parts.length ? decodeURIComponent(parts[parts.length - 1]).replace(/\.html$/, "") : "";
+  }
+
+  function linkBtn(link) {
+    const a = document.createElement("a");
+    a.className = "link-btn";
+    a.href = link.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.innerHTML = (ICONS[link.type] || ICONS.default)
+      + "<span>" + (link.label || LABELS[link.type] || link.type) + "</span>" + CHEV;
+    return a;
+  }
+
+  function render() {
+    const slug = slugFromLocation();
+    const artist = (window.BEDROCK.roster || []).find(a => a.slug === slug);
+    const content = document.getElementById("content");
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    if (!artist) {
+      content.innerHTML = '<div class="notfound">Artist not found. <a href="/">Back to Bedrock Music</a></div>';
+      return;
+    }
+
+    document.title = artist.name + " — Bedrock Music";
+
+    const head = document.createElement("header");
+    head.innerHTML = '<div class="eyebrow">Bedrock Music</div><h1 class="artist-name">'
+      + artist.name + "</h1>";
+    content.appendChild(head);
+
+    const bio = document.createElement("p");
+    if (artist.bio && artist.bio.trim()) { bio.className = "bio"; bio.textContent = artist.bio; }
+    else { bio.className = "bio placeholder"; bio.textContent = "Bio coming soon."; }
+    content.appendChild(bio);
+
+    // Group links by section, preserving each section's defined order.
+    const byType = {};
+    artist.links.forEach(l => { byType[l.type] = l; });
+    Object.keys(GROUPS).forEach(section => {
+      const items = GROUPS[section].map(t => byType[t]).filter(Boolean);
+      if (!items.length) return;
+      const lbl = document.createElement("div");
+      lbl.className = "section-label"; lbl.textContent = section;
+      content.appendChild(lbl);
+      const col = document.createElement("div");
+      col.className = "links-col";
+      items.forEach(l => col.appendChild(linkBtn(l)));
+      content.appendChild(col);
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", render);
+</script>
+</body>
+</html>

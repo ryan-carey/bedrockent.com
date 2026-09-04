@@ -1,0 +1,7 @@
+# Clean artist URLs -> artist.html (rewrite, keeps the pretty URL in the bar)
+/enola-gay          /artist.html   200
+/golden-cats        /artist.html   200
+/jordan-mccullough  /artist.html   200
+/kyndal             /artist.html   200
+/veaux              /artist.html   200
+/walker-burroughs   /artist.html   200
