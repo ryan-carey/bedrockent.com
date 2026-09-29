@@ -7,3 +7,7 @@
 
 # Removed from roster — send the old link home instead of a 404.
 /jordan-mccullough  /              301
+
+# Repo housekeeping — not part of the public site.
+/README.md          /              301
+/deploy.sh          /              301
