@@ -43,7 +43,11 @@ Everything needed to run this site is in this repo plus the owner's own
 Netlify and GitHub accounts. Nothing depends on any particular Claude account,
 chat history, or machine.
 
-- This repo is PRIVATE. Netlify pulls from it over SSH using a deploy key (Netlify side:
+- This repo is PUBLIC, deliberately. It holds only files Netlify already
+  serves to the world at bedrockent.com, and on Netlify's free plan a private
+  repo blocks builds with "Unrecognized Git contributor" unless the committer
+  is a verified team member. Making it private again will break auto-deploy.
+  Netlify pulls from it over SSH using a deploy key (Netlify side:
   "deploy key"; GitHub side: repo Settings -> Deploy keys, read-only). A
   GitHub webhook to `https://api.netlify.com/hooks/github` triggers each build.
 - To publish from a laptop you need only `git push`. No Netlify credential.
