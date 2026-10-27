@@ -100,6 +100,35 @@ window.BEDROCK = {
     {
       name: "VEAUX",
       slug: "veaux",
+      page: {
+        accent: "#ff3355",
+        hero: "/img/veaux-hero.jpg",
+        location: "Nashville, TN",
+        tagline: "Independent alt-pop from Nashville.",
+        socials: ["instagram", "tiktok", "youtube", "spotify"],
+        featured: {
+          title: "The Grand Continuum",
+          kicker: "Out now",
+          subtitle: "New EP · vinyl in the merch store",
+          cover: "/img/veaux-grand-continuum.jpg",
+          spotifyEmbed: "https://open.spotify.com/embed/album/1G2cQ4hT2GWGC6kFEBfvbX?theme=0",
+          links: [
+            { type: "spotify",      url: "https://open.spotify.com/album/1G2cQ4hT2GWGC6kFEBfvbX" },
+            { type: "appleMusic",   url: "https://music.apple.com/us/artist/veaux/1052261438" },
+            { type: "youtubeMusic", url: "https://music.youtube.com/channel/UCWp7aNFg0Tj7qQ1d2aCS5Jg" },
+            { type: "amazonMusic",  url: "https://music.amazon.com/artists/B0799Z2Y74" },
+            { type: "tidal",        url: "https://tidal.com/artist/7330582" }
+          ]
+        },
+        tour: { bandsintownId: "id_15116648", bandsintownAppId: "58f04f5a284510a00f2dba32df1d0c38" },
+        video: { youtubeId: "OiajptPiX1I", vertical: true, caption: "Skin & Shade" },
+        merch: { url: "https://veaux-music.myshopify.com/", title: "VEAUX merch", subtitle: "Tees, hats, crewnecks & vinyl" },
+        signup: { title: "Get on the VEAUX list", text: "New music, shows near you, and first dibs on tickets." },
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" },
+          { role: "Booking", name: "Troy Lawton · Forge Ahead Touring", email: "troy@forgeaheadtouring.com" }
+        ]
+      },
       bio: "",
       links: [
         { type: "spotify",     url: "https://open.spotify.com/artist/1asSK5d79kA4LoNp4LmV3z", primary: true },

@@ -5,6 +5,10 @@ Static link-hub for Bedrock Music. Four files, no build step, no framework.
     index.html    home hub — renders roster + ventures from data.js
     artist.html   one template for every artist page
     data.js       SINGLE SOURCE OF TRUTH — roster, ventures, links, bios, icons
+    page.html     full mobile-first artist page (hero, release, tour, video,
+                  merch, fan sign-up, contacts) driven by an optional `page`
+                  block on the artist in data.js. Live at /preview/<slug>.
+    img/          artist photos and cover art used by page.html
     _redirects    Netlify rules mapping /<slug> to artist.html
 
 Live at https://bedrockent.com · Netlify project `bedrock-music-links`
@@ -61,7 +65,12 @@ chat history, or machine.
   read from an original. Six slug rewrites returning 200, plus a 301 sending
   the removed `/jordan-mccullough` to the homepage. It works, but it has never
   been checked against what was actually intended.
-- No favicon, no netlify.toml, no images. The site is these four files only.
+- No favicon, no netlify.toml. Images live in img/.
+- page.html: any section whose data is missing is skipped. Tour dates load
+  live from Bandsintown (JSONP, using the artist's widget app id), so adding
+  dates on Bandsintown updates the page with no deploy. Fan sign-ups post to
+  the Netlify form `fan-signup` (Netlify dashboard -> Forms; free tier
+  allows 100 submissions/month).
 - A Netlify zip deploy replaces every file on the site. Always ship the whole
   set, never a single file.
 - The Netlify MCP connector's `deploy-site` operation does not work from a

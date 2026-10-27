@@ -5,6 +5,9 @@
 /veaux              /artist.html   200
 /walker-burroughs   /artist.html   200
 
+# Full artist pages (page.html), in preview before replacing the link pages above.
+/preview/*          /page.html     200
+
 # Removed from roster — send the old link home instead of a 404.
 /jordan-mccullough  /              301
 
