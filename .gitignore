@@ -3,3 +3,4 @@ netlify-token.txt
 .DS_Store
 
 Publish site.command
+.gh-token
