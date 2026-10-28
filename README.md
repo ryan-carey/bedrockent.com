@@ -55,6 +55,12 @@ chat history, or machine.
   "deploy key"; GitHub side: repo Settings -> Deploy keys, read-only). A
   GitHub webhook to `https://api.netlify.com/hooks/github` triggers each build.
 - To publish from a laptop you need only `git push`. No Netlify credential.
+- `.gh-token` (gitignored, never uploaded) holds a fine-grained GitHub token
+  scoped to this repo only (Contents: read/write), so Claude can push from a
+  Cowork session: `git -c http.extraHeader="Authorization: Basic <base64 of
+  x-access-token:TOKEN>" push origin main`. Revoke it at github.com ->
+  Settings -> Developer settings -> Fine-grained tokens.
+- Netlify Forms is enabled for the site (needed by page.html's fan sign-up).
 - `netlify-token.txt` is a Netlify personal access token, kept OUTSIDE this
   repo and gitignored. It is only used by `deploy.sh`. Revoke or rotate it at
   app.netlify.com -> User settings -> Applications.
