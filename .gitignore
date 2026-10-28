@@ -1,3 +1,5 @@
 netlify-token.txt
 *.zip
 .DS_Store
+
+Publish site.command
