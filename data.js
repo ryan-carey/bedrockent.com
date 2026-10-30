@@ -104,7 +104,9 @@ window.BEDROCK = {
         merch: { url: "https://merchnow.com/collections/kyndal", title: "Kyndal merch", subtitle: "Official store" },
         signup: { title: "Get on Kyndal’s list", text: "New music, the next tour, and first dibs on tickets." },
         contacts: [
-          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" },
+          { role: "Agent · UTA", name: "Jonathan Roberts", email: "jonathan.roberts@unitedtalent.com" },
+          { role: "Agent · UTA", name: "Marissa Smith", email: "marissa.smith@unitedtalent.com" }
         ],
         pressUrl: "/press/kyndal"
       },
@@ -115,10 +117,10 @@ window.BEDROCK = {
         accent: "#9cc4ff",
         accentInk: "#0b1424",
         accentDeep: "#2d5c99",
-        hero: "/img/kyndal-hero.jpg",
-        heroPosition: "54% 40%",
+        hero: "/img/kyndal-press-hero.jpg",
+        heroPosition: "50% 30%",
         fullName: "Kyndal Inskeep",
-        genre: "Pop",
+        genre: "Pop, Faith-based",
         location: "Nashville, TN",
         oneLiner: "A pop singer-songwriter who turned an American Idol run into a 20-city headline tour — and a song her fans already know every word to.",
         updated: "October 2026",
@@ -167,18 +169,18 @@ window.BEDROCK = {
           { youtubeId: "boOVUW-OojE", vertical: true, title: "Favorite moments from The Barefoot Tour" }
         ],
         photos: [
-          { src: "/img/press/kyndal-field-sm.jpg", full: "/img/press/kyndal-field.jpg", caption: "Field, denim · landscape" },
-          { src: "/img/press/kyndal-live-sm.jpg", full: "/img/press/kyndal-live.jpg", caption: "Live · landscape" },
-          { src: "/img/press/kyndal-grass.jpg", full: "/img/press/kyndal-grass.jpg", caption: "Grass · square" },
-          { src: "/img/press/kyndal-grass-2.jpg", full: "/img/press/kyndal-grass-2.jpg", caption: "Grass, alt · square" }
+          { src: "/img/press/kyndal-sunglasses-sm.jpg", full: "/img/press/kyndal-sunglasses.jpg", caption: "Sunglasses · portrait", position: "50% 30%" },
+          { src: "/img/press/kyndal-closeup-sm.jpg", full: "/img/press/kyndal-closeup.jpg", caption: "Close-up · landscape", position: "42% 40%" },
+          { src: "/img/press/kyndal-meadow-sm.jpg", full: "/img/press/kyndal-meadow.jpg", caption: "Meadow · landscape", position: "50% 50%" }
         ],
         assets: [
           { label: "EP artwork · If You’re Gonna Love Me", note: "2000 × 2000 JPG", url: "/img/press/kyndal-if-youre-gonna-love-me-cover.jpg" },
-          { label: "KYNDAL logo, white", note: "Transparent PNG", url: "/img/press/kyndal-logo-white.png" }
+          { label: "KYNDAL logo, white", note: "Transparent PNG · 2970 × 1343", url: "/img/press/kyndal-logo-white.png" },
+          { label: "KYNDAL logomark, white on black", note: "JPG · 5000 × 5000", url: "/img/press/kyndal-logomark.jpg" }
         ],
         facts: [
           { k: "Name", v: "Kyndal Inskeep (performs as Kyndal)" },
-          { k: "Genre", v: "Pop" },
+          { k: "Genre", v: "Pop, Faith-based" },
           { k: "Based", v: "Nashville, TN" },
           { k: "From", v: "Fishers, Indiana" },
           { k: "Latest release", v: "If You’re Gonna Love Me (EP, Sep 9, 2026)" },
@@ -194,7 +196,9 @@ window.BEDROCK = {
           { title: "Who is Kyndal Inskeep? Her time on The Voice & more", outlet: "TV Insider", url: "https://www.tvinsider.com/1241752/who-is-kyndal-inskeep-american-idol-the-voice-singer" }
         ],
         contacts: [
-          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" },
+          { role: "Agent · UTA", name: "Jonathan Roberts", email: "jonathan.roberts@unitedtalent.com" },
+          { role: "Agent · UTA", name: "Marissa Smith", email: "marissa.smith@unitedtalent.com" }
         ]
       },
       bio: "",

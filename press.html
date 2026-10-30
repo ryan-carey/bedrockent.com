@@ -131,9 +131,9 @@
   .vid figcaption { font-size: 14px; color: var(--ink-2); margin-top: 10px; line-height: 1.4; }
 
   /* Photos */
-  .photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
   .photo { background: var(--card); border: 1px solid var(--rule); border-radius: 6px; overflow: hidden; }
-  .photo .ph { aspect-ratio: 3 / 2; background: var(--rule-soft); }
+  .photo .ph { aspect-ratio: 4 / 5; background: var(--rule-soft); }
   .photo .ph img { width: 100%; height: 100%; object-fit: cover; }
   .photo .meta { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 11px 14px; }
   .photo .meta span { font-size: 13px; color: var(--ink-2); }
@@ -191,7 +191,7 @@
     .bar, .hero-actions, .tool, .dl, .embed-slot, .videos, .toast, #play-here { display: none !important; }
     body { background: #fff; }
     section.block { padding-top: 28px; break-inside: avoid-page; }
-    .photos { grid-template-columns: repeat(4, 1fr); }
+    .photos { grid-template-columns: repeat(3, 1fr); }
   }
 </style>
 </head>
@@ -328,7 +328,7 @@
   if (PH.length || AS.length) {
     html.push(section("photos", "Photos & assets",
       (PH.length ? '<div class="photos">' + PH.map(p =>
-        '<div class="photo"><div class="ph"><img src="' + esc(p.src) + '" alt="' + esc(artist.name + (p.caption ? " — " + p.caption : "")) + '" loading="lazy" /></div>' +
+        '<div class="photo"><div class="ph"><img src="' + esc(p.src) + '" alt="' + esc(artist.name + (p.caption ? " — " + p.caption : "")) + '" loading="lazy"' + (p.position ? ' style="object-position:' + esc(p.position) + '"' : "") + ' /></div>' +
         '<div class="meta"><span>' + esc(p.caption || "") + '</span><a class="dl" href="' + esc(p.full || p.src) + '" download="' + esc(fileName(p.full || p.src)) + '">' + DL + "Hi-res</a></div></div>").join("") + "</div>" : "") +
       (K.photoCredit ? '<p class="credit">' + esc(K.photoCredit) + "</p>" : "") +
       (AS.length ? '<div class="assets">' + AS.map(a =>
