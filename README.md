@@ -8,7 +8,12 @@ Static link-hub for Bedrock Music. Four files, no build step, no framework.
     page.html     full mobile-first artist page (hero, release, tour, video,
                   merch, fan sign-up, contacts) driven by an optional `page`
                   block on the artist in data.js. Live at /preview/<slug>.
-    img/          artist photos and cover art used by page.html
+    press.html    electronic press kit (bio, stats, highlights, music, video,
+                  downloadable photos/assets, fact sheet, coverage, contacts)
+                  driven by an optional `press` block on the artist in data.js.
+                  Live at /press/<slug>.
+    img/          artist photos and cover art used by page.html;
+                  img/press/ holds hi-res downloads for press kits
     _redirects    Netlify rules mapping /<slug> to artist.html
 
 Live at https://bedrockent.com · Netlify project `bedrock-music-links`
@@ -72,6 +77,9 @@ chat history, or machine.
   the removed `/jordan-mccullough` to the homepage. It works, but it has never
   been checked against what was actually intended.
 - No favicon, no netlify.toml. Images live in img/.
+- page.html options beyond the basics: `heroColor: true` keeps the hero photo in
+  colour (default is black-and-white), `heroPosition` sets the crop focal point
+  (CSS object-position), `pressUrl` adds a press-kit card under Contact.
 - page.html: any section whose data is missing is skipped. Tour dates load
   live from Bandsintown (JSONP, using the artist's widget app id), so adding
   dates on Bandsintown updates the page with no deploy. Fan sign-ups post to

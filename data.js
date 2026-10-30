@@ -76,6 +76,127 @@ window.BEDROCK = {
     {
       name: "Kyndal",
       slug: "kyndal",
+      page: {
+        accent: "#9cc4ff",
+        accentInk: "#0b1424",
+        hero: "/img/kyndal-hero.jpg",
+        heroColor: true,
+        heroPosition: "54% 40%",
+        location: "Nashville, TN",
+        tagline: "Pop singer-songwriter. Raised in Indiana, made in Nashville. “Growing Pains” out now.",
+        socials: ["instagram", "tiktok", "youtube", "spotify"],
+        featured: {
+          title: "If You’re Gonna Love Me",
+          kicker: "New EP · out now",
+          subtitle: "Featuring “Growing Pains” and “Woman Of Me”",
+          cover: "/img/kyndal-iygml.jpg",
+          spotifyEmbed: "https://open.spotify.com/embed/album/2o9thAWLcPailj7dJZ4MoO?theme=0",
+          links: [
+            { type: "spotify",      url: "https://open.spotify.com/album/2o9thAWLcPailj7dJZ4MoO" },
+            { type: "appleMusic",   url: "https://music.apple.com/us/artist/kyndal-inskeep/1277469846" },
+            { type: "youtubeMusic", url: "https://music.youtube.com/channel/UCztY0k7wxvRutH73RrH8cfg" },
+            { type: "amazonMusic",  url: "https://music.amazon.com/artists/B075859L26/kyndal-inskeep" },
+            { type: "tidal",        url: "https://tidal.com/artist/9076242" }
+          ]
+        },
+        tour: { bandsintownId: "id_15515080", bandsintownAppId: "58f04f5a284510a00f2dba32df1d0c38" },
+        video: { youtubeId: "yfoQeo9Fibc", vertical: true, caption: "“Growing Pains” — the sweetest girl knew every word" },
+        merch: { url: "https://merchnow.com/collections/kyndal", title: "Kyndal merch", subtitle: "Official store" },
+        signup: { title: "Get on Kyndal’s list", text: "New music, the next tour, and first dibs on tickets." },
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+        ],
+        pressUrl: "/press/kyndal"
+      },
+
+      /* Electronic press kit, rendered by press.html at /press/kyndal.
+         Every section is optional; anything left out is skipped. */
+      press: {
+        accent: "#9cc4ff",
+        accentInk: "#0b1424",
+        accentDeep: "#2d5c99",
+        hero: "/img/kyndal-hero.jpg",
+        heroPosition: "54% 40%",
+        fullName: "Kyndal Inskeep",
+        genre: "Pop",
+        location: "Nashville, TN",
+        oneLiner: "A pop singer-songwriter who turned an American Idol run into a 20-city headline tour — and a song her fans already know every word to.",
+        updated: "October 2026",
+        stats: [
+          { value: "500K", label: "Instagram followers" },
+          { value: "353K", label: "Spotify monthly listeners" },
+          { value: "18M", label: "Instagram reel views, Jan–Sep 2026" },
+          { value: "5,289", label: "Tickets, first headline tour" }
+        ],
+        shortBio: "Kyndal Inskeep is a pop singer-songwriter based in Nashville. A Top 9 finalist on American Idol Season 24 and a Team Gwen standout on The Voice, she spent summer 2026 on The Barefoot Tour — her first headline run — and released the EP If You’re Gonna Love Me, led by the fan favorite “Growing Pains.”",
+        bio: [
+          "Kyndal Inskeep writes the kind of pop songs people sing back to her — loudly, word for word, often with tears in their eyes. Raised in Fishers, Indiana and now based in Nashville, she makes heart-on-sleeve pop with a faith-shaped center: honest about growing up, about family, and about the in-between seasons nobody posts about.",
+          "Television introduced her. In 2019 she turned chairs with her blind audition on The Voice, joined Team Gwen, and won both her Battle and Knockout rounds. In 2026 she returned to the national stage on American Idol Season 24, earning a Platinum Ticket and a run into the Top 9. Along the way she debuted “Woman Of Me,” an original written for her mom, and a reel of her mother singing during the show’s Ohana Round reached more than eight million viewers on Instagram alone.",
+          "What came next is the part that matters. In June she opened for Lauren Daigle. Then, from July 24 to August 23, she headlined The Barefoot Tour: 20 cities, 5,289 tickets, and seven rooms at 90% capacity or better — from Minneapolis and Chicago to New York, Philadelphia, Denver, Seattle and Nashville. The footage from those nights did something the TV clips couldn’t: it turned viewers into fans. Her Instagram, now past 500,000 followers, went from adding roughly 200 followers a day to nearly 1,900 a day after the tour’s first big reel — and held there.",
+          "The soundtrack to that summer is If You’re Gonna Love Me, a four-song EP released September 9, 2026. Its centerpiece, “Growing Pains,” was the song crowds were already singing before it was out — the one where a little girl in the front row sang every line back. With 350,000+ monthly listeners on Spotify and a fanbase that shows up, Kyndal is writing toward a debut full-length and the next tour."
+        ],
+        quotes: [
+          { text: "I think she’s extremely talented and a beautiful songwriter.", by: "Luke Bryan", where: "American Idol judge, via Entertainment Now", url: "https://entertainmentnow.com/american-idol/kyndal-inskeep-elimination-judges-shocker/" }
+        ],
+        highlights: [
+          { when: "2019", what: "The Voice, Season 17 — chair-turning blind audition; won her Battle and Knockout rounds on Team Gwen" },
+          { when: "Spring 2026", what: "American Idol, Season 24 — Platinum Ticket; Top 9 finalist" },
+          { when: "Mar 2026", what: "Ohana Round reel with her mom: 8.1M Instagram views, 35K new followers from one post" },
+          { when: "May 2026", what: "Single “In It Now”" },
+          { when: "Jun 2026", what: "Opened for Lauren Daigle" },
+          { when: "Jul–Aug 2026", what: "The Barefoot Tour — first headline tour: 20 dates, 5,289 tickets, 77% of capacity, seven rooms at 90%+" },
+          { when: "Sep 2026", what: "EP If You’re Gonna Love Me, featuring “Growing Pains”" }
+        ],
+        music: {
+          title: "If You’re Gonna Love Me",
+          meta: "EP · September 9, 2026 · 4 songs",
+          cover: "/img/kyndal-iygml.jpg",
+          tracks: ["If You’re Gonna Love Me", "Growing Pains", "Woman Of Me", "Babylon"],
+          focus: "Growing Pains",
+          spotifyEmbed: "https://open.spotify.com/embed/album/2o9thAWLcPailj7dJZ4MoO?theme=0",
+          listen: "https://open.spotify.com/album/2o9thAWLcPailj7dJZ4MoO",
+          also: [
+            { title: "In It Now", meta: "Single · 2026", url: "https://open.spotify.com/album/2STolP2nhBhzVW0Pzx7FRe" },
+            { title: "Piece of My Heart (from American Idol)", meta: "Single · 2026", url: "https://open.spotify.com/album/0SxSm16ZF5xZq07VF95PkJ" },
+            { title: "Iris (from American Idol)", meta: "Single · 2026", url: "https://open.spotify.com/album/1av0piEKrf6Ot1tCHn9luk" }
+          ]
+        },
+        videos: [
+          { youtubeId: "yfoQeo9Fibc", vertical: true, title: "“Growing Pains” — the sweetest girl knew every word" },
+          { youtubeId: "MZdHJlyRF9Q", vertical: true, title: "The Barefoot Tour — tour footage, “Growing Pains”" },
+          { youtubeId: "boOVUW-OojE", vertical: true, title: "Favorite moments from The Barefoot Tour" }
+        ],
+        photos: [
+          { src: "/img/press/kyndal-field-sm.jpg", full: "/img/press/kyndal-field.jpg", caption: "Field, denim · landscape" },
+          { src: "/img/press/kyndal-live-sm.jpg", full: "/img/press/kyndal-live.jpg", caption: "Live · landscape" },
+          { src: "/img/press/kyndal-grass.jpg", full: "/img/press/kyndal-grass.jpg", caption: "Grass · square" },
+          { src: "/img/press/kyndal-grass-2.jpg", full: "/img/press/kyndal-grass-2.jpg", caption: "Grass, alt · square" }
+        ],
+        assets: [
+          { label: "EP artwork · If You’re Gonna Love Me", note: "2000 × 2000 JPG", url: "/img/press/kyndal-if-youre-gonna-love-me-cover.jpg" },
+          { label: "KYNDAL logo, white", note: "Transparent PNG", url: "/img/press/kyndal-logo-white.png" }
+        ],
+        facts: [
+          { k: "Name", v: "Kyndal Inskeep (performs as Kyndal)" },
+          { k: "Genre", v: "Pop" },
+          { k: "Based", v: "Nashville, TN" },
+          { k: "From", v: "Fishers, Indiana" },
+          { k: "Latest release", v: "If You’re Gonna Love Me (EP, Sep 9, 2026)" },
+          { k: "Focus track", v: "“Growing Pains”" },
+          { k: "TV", v: "American Idol S24 (Top 9) · The Voice S17 (Team Gwen)" },
+          { k: "Live", v: "The Barefoot Tour, 2026 · support for Lauren Daigle" },
+          { k: "Audience", v: "85% women · two-thirds aged 25–44 (Instagram)" }
+        ],
+        coverage: [
+          { title: "Kyndal Inskeep shares powerful original song “Woman Of Me” for her mom on American Idol", outlet: "Music Mayhem", url: "https://musicmayhemmagazine.com/kyndal-inskeep-shares-powerful-original-song-woman-of-me-for-her-mom-on-american-idol/" },
+          { title: "Kyndal Inskeep delivers powerful cover of Noah Kahan’s “Call Your Mom”", outlet: "Music Mayhem", url: "https://musicmayhemmagazine.com/kyndal-inskeep-leaves-guitar-behind-delivers-powerful-cover-of-noah-kahans-call-your-mom-on-american-idol/" },
+          { title: "Indiana native Kyndal Inskeep fights through vocal issues to make American Idol Top 9", outlet: "ABC7 Chicago", url: "https://abc7chicago.com/post/indiana-native-kyndal-inskeep-fights-illness-vocal-issues-make-american-idol-top-9-disney-week/18901163/" },
+          { title: "Who is Kyndal Inskeep? Her time on The Voice & more", outlet: "TV Insider", url: "https://www.tvinsider.com/1241752/who-is-kyndal-inskeep-american-idol-the-voice-singer" }
+        ],
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+        ]
+      },
       bio: "",
       links: [
         { type: "spotify",     url: "https://open.spotify.com/artist/4VFMlrDAmF0wwua3FVD8Qx", primary: true },

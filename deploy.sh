@@ -10,7 +10,7 @@ TOKEN_FILE="${NETLIFY_TOKEN_FILE:-$HERE/../netlify-token.txt}"
 TOKEN="$(tr -d ' \t\r\n' < "$TOKEN_FILE")"
 
 ZIP="$(mktemp -d)/site.zip"
-( cd "$HERE" && zip -qr "$ZIP" index.html artist.html page.html data.js _redirects img )
+( cd "$HERE" && zip -qr "$ZIP" index.html artist.html page.html press.html data.js _redirects img )
 
 echo "Deploying $(unzip -l "$ZIP" | tail -1 | awk "{print \$2}") files..."
 RESP="$(curl -sf --max-time 300 \
