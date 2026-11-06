@@ -84,6 +84,7 @@ window.BEDROCK = {
       page: {
         accent: "#e8b23c",
         accentInk: "#1b1405",
+        /* No `location` by choice - Golden Cats' base is not public. Leave it out. */
         tagline: "Indie pop-rock duo. Self-titled debut EP out now.",
         socials: ["instagram", "tiktok", "youtube", "spotify"],
         featured: {
@@ -333,7 +334,8 @@ window.BEDROCK = {
       slug: "walker-burroughs",
       page: {
         accent: "#ff3123",
-        tagline: "Singer-songwriter. “The Bird’s Song” out now.",
+        location: "Nashville, TN",
+        tagline: "Folk-rooted songs about joy, growth, and the beauty of imperfection. “The Bird’s Song” out now.",
         socials: ["instagram", "tiktok", "youtube", "spotify"],
         featured: {
           title: "The Bird’s Song",
@@ -350,6 +352,41 @@ window.BEDROCK = {
         },
         tour: { bandsintownId: "id_15530829", bandsintownAppId: "58f04f5a284510a00f2dba32df1d0c38" },
         signup: { title: "Get on the Walker Burroughs list", text: "New music, shows near you, and first dibs on tickets." },
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+        ],
+        pressUrl: "/press/walker-burroughs"
+      },
+
+      /* Electronic press kit, rendered by press.html at /press/walker-burroughs.
+         Text supplied by the artist. Photos, stats and coverage still to come. */
+      press: {
+        accent: "#ff3123",
+        accentDeep: "#a31508",
+        fullName: "Walker Burroughs",
+        genre: "Folk singer-songwriter",
+        location: "Nashville, TN",
+        oneLiner: "Folk-rooted songs about joy, growth, and the beauty of imperfection — from a Birmingham-born songwriter and 2026 NPR Tiny Desk Contest finalist.",
+        updated: "November 2026",
+        shortBio: "Walker Burroughs is a Birmingham, Alabama-born singer-songwriter whose folk-rooted music explores joy, growth, and the beauty of imperfection. He has garnered millions of streams across his catalog, released his debut EP Outside the Frame, and was a finalist for NPR’s Tiny Desk Contest in 2026.",
+        bio: [
+          "Walker Burroughs is a Birmingham, Alabama-born singer-songwriter whose folk-rooted music explores joy, growth, and the beauty of imperfection. Drawing inspiration from artists like John Denver, J.R.R. Tolkien, and Glen Campbell, Walker pairs thoughtful storytelling with an organic approach to making music. His debut EP, Outside the Frame, reflects a journey of self-discovery and a belief that music is at its best when it feels human—unpolished, honest, and alive. Walker has garnered millions of streams across his catalog and was featured as a finalist for NPR’s Tiny Desk Contest in 2026.",
+          "The songs he writes are comprised of folky, wooden sounds, and they tell stories of life and love through a grounded connection to the natural world. If much of today’s live and recorded music is a machine-chiseled marble statue, cut with mathematical perfection to be stared at from behind a rope, then Walker’s music is an old tree. It took a while to grow, and it isn’t perfect. But it’s not trying to be. If you like thoughtful, soaring, and occasionally funny tunes, you have made it to the right place.",
+          "Come sit under the shade of the leaves – you are welcome here."
+        ],
+        highlights: [
+          { when: "2026", what: "Finalist, NPR Tiny Desk Contest" },
+          { when: "Nov 2025", what: "Debut EP, Outside the Frame" },
+          { when: "Oct 2026", what: "Outside the Frame: Live at the Analog — EP" },
+          { when: "Nov 2026", what: "“The Bird’s Song” single" }
+        ],
+        music: {
+          title: "The Bird’s Song",
+          meta: "Single · November 6, 2026",
+          cover: "/img/walker-burroughs-birds-song.jpg",
+          tracks: ["The Bird’s Song"],
+          listen: "https://music.apple.com/us/album/the-birds-song-single/6822930227"
+        },
         contacts: [
           { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
         ]
