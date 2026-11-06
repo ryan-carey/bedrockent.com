@@ -120,7 +120,7 @@ window.BEDROCK = {
         hero: "/img/kyndal-press-hero.jpg",
         heroPosition: "50% 30%",
         fullName: "Kyndal Inskeep",
-        genre: "Pop, Faith-based",
+        genre: "Barefoot pop, faith-based",
         location: "Nashville, TN",
         oneLiner: "A pop singer-songwriter who turned an American Idol run into a 20-city headline tour — and a song her fans already know every word to.",
         updated: "October 2026",
@@ -180,7 +180,7 @@ window.BEDROCK = {
         ],
         facts: [
           { k: "Name", v: "Kyndal Inskeep (performs as Kyndal)" },
-          { k: "Genre", v: "Pop, Faith-based" },
+          { k: "Genre", v: "Barefoot pop, faith-based" },
           { k: "Based", v: "Nashville, TN" },
           { k: "From", v: "Fishers, Indiana" },
           { k: "Latest release", v: "If You’re Gonna Love Me (EP, Sep 9, 2026)" },
