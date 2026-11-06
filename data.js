@@ -33,12 +33,38 @@ window.BEDROCK = {
     {
       name: "Enola Gay",
       slug: "enola-gay",
+      page: {
+        accent: "#8ff0bd",
+        accentInk: "#06160e",
+        location: "Belfast, Northern Ireland",
+        tagline: "Post-punk and noise rock from Belfast.",
+        socials: ["instagram", "tiktok", "youtube", "spotify"],
+        featured: {
+          title: "Cortana",
+          kicker: "Latest single",
+          subtitle: "Produced by Mount Palomar",
+          cover: "/img/enola-gay-cortana.jpg",
+          links: [
+            { type: "appleMusic",   url: "https://music.apple.com/us/album/cortana-single/1758095599" },
+            { type: "spotify",      url: "https://open.spotify.com/artist/1CT7BjCVYK5vr9SNr7WlEP" },
+            { type: "youtubeMusic", url: "https://music.youtube.com/channel/UCGTtF-9d9-k9wXAq1jjAHaQ" },
+            { type: "amazonMusic",  url: "https://music.amazon.com/artists/B00I9G10UG/enola-gay" },
+            { type: "tidal",        url: "https://tidal.com/artist/5409716" }
+          ]
+        },
+        tour: { bandsintownId: "id_15489575", bandsintownAppId: "58f04f5a284510a00f2dba32df1d0c38" },
+        video: { youtubeId: "LIDSDij_4Qk", vertical: false, caption: "“Cortana”" },
+        signup: { title: "Get on the Enola Gay list", text: "New music, shows near you, and first dibs on tickets." },
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+        ]
+      },
       bio: "",
       links: [
         { type: "spotify",     url: "https://open.spotify.com/artist/1CT7BjCVYK5vr9SNr7WlEP", primary: true },
         { type: "instagram",   url: "https://www.instagram.com/enolagay_band/", primary: true },
         { type: "bandsintown", url: "https://www.bandsintown.com/a/15489575-enola-gay", primary: true },
-        { type: "appleMusic",  url: "https://music.apple.com/us/artist/enola-gay/1519132751" },
+        { type: "appleMusic",  url: "https://music.apple.com/us/artist/enola-gay/1519132751", primary: true },
         { type: "youtubeMusic",url: "https://music.youtube.com/channel/UCGTtF-9d9-k9wXAq1jjAHaQ" },
         { type: "youtube",     url: "https://www.youtube.com/@enolagay_band" },
         { type: "tidal",       url: "https://tidal.com/artist/5409716" },
@@ -55,12 +81,37 @@ window.BEDROCK = {
     {
       name: "Golden Cats",
       slug: "golden-cats",
+      page: {
+        accent: "#e8b23c",
+        accentInk: "#1b1405",
+        tagline: "Indie pop-rock duo. Self-titled debut EP out now.",
+        socials: ["instagram", "tiktok", "youtube", "spotify"],
+        featured: {
+          title: "Golden Cats",
+          kicker: "Debut EP · out now",
+          subtitle: "14 tracks, via Not A Label / AWAL",
+          cover: "/img/golden-cats-self-titled.jpg",
+          spotifyEmbed: "https://open.spotify.com/embed/album/7w8ue5fygzOdgw2U2kVIvi?theme=0",
+          links: [
+            { type: "spotify",      url: "https://open.spotify.com/album/7w8ue5fygzOdgw2U2kVIvi" },
+            { type: "appleMusic",   url: "https://music.apple.com/us/album/golden-cats/6807176591" },
+            { type: "youtubeMusic", url: "https://music.youtube.com/channel/UC6CvuBW69B6MwRBx0NsZQRg" },
+            { type: "deezer",       url: "https://www.deezer.com/us/artist/244135702" }
+          ]
+        },
+        tour: { bandsintownId: "id_8286249", bandsintownAppId: "58f04f5a284510a00f2dba32df1d0c38" },
+        video: { youtubeId: "LsZWkEZ9O1Q", vertical: false, caption: "“Little Bit (Shadow)” — official video" },
+        signup: { title: "Get on the Golden Cats list", text: "New music, shows near you, and first dibs on tickets." },
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+        ]
+      },
       bio: "",
       links: [
         { type: "spotify",     url: "https://open.spotify.com/artist/2jmo1S0qDb6WzvNfTf6PUr", primary: true },
         { type: "instagram",   url: "https://www.instagram.com/goldencatsmusic", primary: true },
         { type: "tiktok",      url: "https://www.tiktok.com/@goldencatsmusic", primary: true },
-        { type: "appleMusic",  url: "https://music.apple.com/us/artist/golden-cats/1718684055" },
+        { type: "appleMusic",  url: "https://music.apple.com/us/artist/golden-cats/1718684055", primary: true },
         { type: "youtubeMusic",url: "https://music.youtube.com/channel/UC6CvuBW69B6MwRBx0NsZQRg" },
         { type: "youtube",     url: "https://www.youtube.com/@goldencatsmusic" },
         { type: "deezer",      url: "https://www.deezer.com/us/artist/244135702" },
@@ -207,7 +258,7 @@ window.BEDROCK = {
         { type: "instagram",   url: "https://www.instagram.com/kyndalinskeep/", primary: true },
         { type: "tiktok",      url: "https://www.tiktok.com/@kyndalofficial", primary: true },
         { type: "website",     url: "https://www.kyndalmusic.com/", primary: true },
-        { type: "appleMusic",  url: "https://music.apple.com/us/artist/kyndal-inskeep/1277469846" },
+        { type: "appleMusic",  url: "https://music.apple.com/us/artist/kyndal-inskeep/1277469846", primary: true },
         { type: "youtubeMusic",url: "https://music.youtube.com/channel/UCztY0k7wxvRutH73RrH8cfg" },
         { type: "youtube",     url: "https://www.youtube.com/channel/UCztY0k7wxvRutH73RrH8cfg" },
         { type: "tidal",       url: "https://tidal.com/artist/9076242" },
@@ -260,7 +311,7 @@ window.BEDROCK = {
         { type: "instagram",   url: "https://www.instagram.com/veauxmusic/", primary: true },
         { type: "tiktok",      url: "https://www.tiktok.com/@veauxveauxveaux", primary: true },
         { type: "website",     url: "https://www.veauxmusic.com/", primary: true },
-        { type: "appleMusic",  url: "https://music.apple.com/us/artist/veaux/1052261438" },
+        { type: "appleMusic",  url: "https://music.apple.com/us/artist/veaux/1052261438", primary: true },
         { type: "youtubeMusic",url: "https://music.youtube.com/channel/UCWp7aNFg0Tj7qQ1d2aCS5Jg" },
         { type: "youtube",     url: "https://www.youtube.com/@VEAUXmusic" },
         { type: "tidal",       url: "https://tidal.com/artist/7330582" },
@@ -280,13 +331,36 @@ window.BEDROCK = {
     {
       name: "Walker Burroughs",
       slug: "walker-burroughs",
+      page: {
+        accent: "#ff3123",
+        tagline: "Singer-songwriter. “The Bird’s Song” out now.",
+        socials: ["instagram", "tiktok", "youtube", "spotify"],
+        featured: {
+          title: "The Bird’s Song",
+          kicker: "New single · out now",
+          subtitle: "Follows the “Outside the Frame: Live at the Analog” EP",
+          cover: "/img/walker-burroughs-birds-song.jpg",
+          links: [
+            { type: "appleMusic",   url: "https://music.apple.com/us/album/the-birds-song-single/6822930227" },
+            { type: "spotify",      url: "https://open.spotify.com/artist/3IbC67wKy65bRFv0htSIxQ" },
+            { type: "youtubeMusic", url: "https://music.youtube.com/channel/UC5q2k_gGRnE8OVtoQgExWOw" },
+            { type: "amazonMusic",  url: "https://music.amazon.com/artists/B07F3J2RQ1" },
+            { type: "tidal",        url: "https://tidal.com/artist/43885197" }
+          ]
+        },
+        tour: { bandsintownId: "id_15530829", bandsintownAppId: "58f04f5a284510a00f2dba32df1d0c38" },
+        signup: { title: "Get on the Walker Burroughs list", text: "New music, shows near you, and first dibs on tickets." },
+        contacts: [
+          { role: "Management", name: "Ryan Carey · Bedrock", email: "ryan@bedrockent.com" }
+        ]
+      },
       bio: "",
       links: [
         { type: "spotify",     url: "https://open.spotify.com/artist/3IbC67wKy65bRFv0htSIxQ", primary: true },
         { type: "instagram",   url: "https://www.instagram.com/walkerburroughs/", primary: true },
         { type: "tiktok",      url: "https://www.tiktok.com/@walkerburroughs", primary: true },
         { type: "bandsintown", url: "https://www.bandsintown.com/a/15530829-walker-burroughs", primary: true },
-        { type: "appleMusic",  url: "https://music.apple.com/us/artist/walker-burroughs/1405110754" },
+        { type: "appleMusic",  url: "https://music.apple.com/us/artist/walker-burroughs/1405110754", primary: true },
         { type: "youtubeMusic",url: "https://music.youtube.com/channel/UC5q2k_gGRnE8OVtoQgExWOw" },
         { type: "youtube",     url: "https://www.youtube.com/@WalkerBurroughs" },
         { type: "tidal",       url: "https://tidal.com/artist/43885197" },

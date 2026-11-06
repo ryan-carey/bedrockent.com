@@ -230,6 +230,11 @@
   const dock = [];
 
   /* ---------- Hero ---------- */
+  /* Long single words (e.g. "BURROUGHS") overflow the default 19vw type scale.
+     Shrink only those; names of 7 characters or fewer keep the original size. */
+  const longestWord = artist.name.split(/\s+/).reduce((m, w) => Math.max(m, w.length), 0);
+  const nameSize = longestWord > 7 ? "clamp(40px, min(19vw, " + (132 / longestWord).toFixed(1) + "vw), 96px)" : "";
+
   const socialTypes = P.socials || ["instagram", "tiktok", "youtube", "spotify"];
   const socials = socialTypes.map(t => byType[t]).filter(Boolean)
     .map(l => '<a href="' + esc(l.url) + '" target="_blank" rel="noopener" aria-label="' + esc(label(l)) + '">' + icon(l.type) + "</a>").join("");
@@ -240,7 +245,7 @@
         '<button class="share-btn" id="share">Share</button></div></div>' +
       '<div class="hero-body"><div class="wrap">' +
         (P.location ? '<div class="eyebrow">' + esc(P.location) + "</div>" : "") +
-        '<h1 class="name">' + esc(artist.name) + "</h1>" +
+        '<h1 class="name"' + (nameSize ? ' style="font-size:' + nameSize + '"' : "") + ">" + esc(artist.name) + "</h1>" +
         (P.tagline ? '<p class="tagline">' + esc(P.tagline) + "</p>" : (artist.bio ? '<p class="tagline">' + esc(artist.bio) + "</p>" : "")) +
         (socials ? '<div class="socials">' + socials + "</div>" : "") +
       "</div></div>" +
