@@ -83,7 +83,7 @@ window.BEDROCK = {
         heroColor: true,
         heroPosition: "54% 40%",
         location: "Nashville, TN",
-        tagline: "Pop singer-songwriter. Raised in Indiana, made in Nashville. “Growing Pains” out now.",
+        tagline: "Barefoot pop singer-songwriter. Raised in Indiana, made in Nashville. “Growing Pains” out now.",
         socials: ["instagram", "tiktok", "youtube", "spotify"],
         featured: {
           title: "If You’re Gonna Love Me",
@@ -122,7 +122,7 @@ window.BEDROCK = {
         fullName: "Kyndal Inskeep",
         genre: "Barefoot pop, faith-based",
         location: "Nashville, TN",
-        oneLiner: "A pop singer-songwriter who turned an American Idol run into a 20-city headline tour — and a song her fans already know every word to.",
+        oneLiner: "A barefoot pop singer-songwriter who turned an American Idol run into a 20-city headline tour — and a song her fans already know every word to.",
         updated: "October 2026",
         stats: [
           { value: "500K", label: "Instagram followers" },
@@ -130,9 +130,9 @@ window.BEDROCK = {
           { value: "18M", label: "Instagram reel views, Jan–Sep 2026" },
           { value: "5,289", label: "Tickets, first headline tour" }
         ],
-        shortBio: "Kyndal Inskeep is a pop singer-songwriter based in Nashville. A Top 9 finalist on American Idol Season 24 and a Team Gwen standout on The Voice, she spent summer 2026 on The Barefoot Tour — her first headline run — and released the EP If You’re Gonna Love Me, led by the fan favorite “Growing Pains.”",
+        shortBio: "Kyndal Inskeep is a barefoot pop singer-songwriter based in Nashville. A Top 9 finalist on American Idol Season 24 and a Team Gwen standout on The Voice, she spent summer 2026 on The Barefoot Tour — her first headline run — and released the EP If You’re Gonna Love Me, led by the fan favorite “Growing Pains.”",
         bio: [
-          "Kyndal Inskeep writes the kind of pop songs people sing back to her — loudly, word for word, often with tears in their eyes. Raised in Fishers, Indiana and now based in Nashville, she makes heart-on-sleeve pop with a faith-shaped center: honest about growing up, about family, and about the in-between seasons nobody posts about.",
+          "Kyndal Inskeep writes the kind of pop songs people sing back to her — loudly, word for word, often with tears in their eyes. Raised in Fishers, Indiana and now based in Nashville, she makes what she calls barefoot pop — heart-on-sleeve songs with a faith-shaped center, honest about growing up, about family, and about the in-between seasons nobody posts about.",
           "Television introduced her. In 2019 she turned chairs with her blind audition on The Voice, joined Team Gwen, and won both her Battle and Knockout rounds. In 2026 she returned to the national stage on American Idol Season 24, earning a Platinum Ticket and a run into the Top 9. Along the way she debuted “Woman Of Me,” an original written for her mom, and a reel of her mother singing during the show’s Ohana Round reached more than eight million viewers on Instagram alone.",
           "What came next is the part that matters. In June she opened for Lauren Daigle. Then, from July 24 to August 23, she headlined The Barefoot Tour: 20 cities, 5,289 tickets, and seven rooms at 90% capacity or better — from Minneapolis and Chicago to New York, Philadelphia, Denver, Seattle and Nashville. The footage from those nights did something the TV clips couldn’t: it turned viewers into fans. Her Instagram, now past 500,000 followers, went from adding roughly 200 followers a day to nearly 1,900 a day after the tour’s first big reel — and held there.",
           "The soundtrack to that summer is If You’re Gonna Love Me, a four-song EP released September 9, 2026. Its centerpiece, “Growing Pains,” was the song crowds were already singing before it was out — the one where a little girl in the front row sang every line back. With 350,000+ monthly listeners on Spotify and a fanbase that shows up, Kyndal is writing toward a debut full-length and the next tour."
