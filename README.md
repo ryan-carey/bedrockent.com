@@ -3,11 +3,13 @@
 Static link-hub for Bedrock Music. Four files, no build step, no framework.
 
     index.html    home hub — renders roster + ventures from data.js
-    artist.html   one template for every artist page
+    artist.html   earlier link-list template. No longer routed to; page.html
+                  replaced it on the clean artist URLs. Kept for reference.
     data.js       SINGLE SOURCE OF TRUTH — roster, ventures, links, bios, icons
     page.html     full mobile-first artist page (hero, release, tour, video,
                   merch, fan sign-up, contacts) driven by an optional `page`
-                  block on the artist in data.js. Live at /preview/<slug>.
+                  block on the artist in data.js. Serves the clean artist
+                  URLs (/<slug>); /preview/<slug> still resolves to it too.
     press.html    electronic press kit (bio, stats, highlights, music, video,
                   downloadable photos/assets, fact sheet, coverage, contacts)
                   driven by an optional `press` block on the artist in data.js.

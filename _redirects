@@ -1,11 +1,11 @@
-# Clean artist URLs -> artist.html (rewrite, keeps the pretty URL in the bar)
-/enola-gay          /artist.html   200
-/golden-cats        /artist.html   200
-/kyndal             /artist.html   200
-/veaux              /artist.html   200
-/walker-burroughs   /artist.html   200
+# Clean artist URLs -> page.html, the full artist page (rewrite, keeps the pretty URL in the bar)
+/enola-gay          /page.html     200
+/golden-cats        /page.html     200
+/kyndal             /page.html     200
+/veaux              /page.html     200
+/walker-burroughs   /page.html     200
 
-# Full artist pages (page.html), in preview before replacing the link pages above.
+# The old preview paths still resolve, so links shared while these were in preview keep working.
 /preview/*          /page.html     200
 
 # Electronic press kits (press.html), driven by each artist's `press` block in data.js.
