@@ -85,6 +85,8 @@ window.BEDROCK = {
         accent: "#e8b23c",
         accentInk: "#1b1405",
         /* No `location` by choice - Golden Cats' base is not public. Leave it out. */
+        hero: "/img/golden-cats-hero.jpg",
+        heroPosition: "58% 40%",
         tagline: "Indie pop-rock duo. Self-titled debut EP out now.",
         socials: ["instagram", "tiktok", "youtube", "spotify"],
         featured: {
@@ -334,6 +336,9 @@ window.BEDROCK = {
       slug: "walker-burroughs",
       page: {
         accent: "#ff3123",
+        hero: "/img/walker-burroughs-hero.jpg",
+        heroColor: true,
+        heroPosition: "45% 25%",
         location: "Nashville, TN",
         tagline: "Folk-rooted songs about joy, growth, and the beauty of imperfection. “The Bird’s Song” out now.",
         socials: ["instagram", "tiktok", "youtube", "spotify"],
